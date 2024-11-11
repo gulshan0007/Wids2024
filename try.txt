@@ -1,0 +1,113 @@
+  <nav class="navbar navbar-default navbar-fixed-top" ">
+        <div class="container ">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll" >
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class=" page-scroll" href="#page-top"><img src="assets/img/UGAC (1) (1).png" style="width:100px; height: 95px; padding-right: 25px;" alt=""></a>
+                <a class=" page-scroll" href="#page-top"><img src="img/clublogo.png" style="width: 87px; height: 75px;" alt=""></a>
+               
+                <!-- <a class=" page-scroll" href="#page-top"><img src="img/schoollogo.jpg" style="width: 87px; height: 75px;" alt=""></a> -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right " style="margin-top: 20px;">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.php#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="browse.php">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="https://docs.google.com/document/d/1O2H_wYcnVwMu9uw4KiR9-CPSaoGKbiYa4EOxLwe20HI/edit?usp=sharing" target="_blank">ML Booklet</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="index.php#faqs">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="team.php">Contact Us</a>
+                    </li>
+                    <?php if (!isset($_SESSION['ldap'])) { ?>
+		            <li class="nav-item">
+		                <a class="btn btn-dark mx-2 my-md-0 my-1 dotted-border"
+		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=uX35ldsNmi5eP06nOp569EyPaAkQ6Hx9sDRL7KSK&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
+		                    target="_parent">Login via SSO</a>
+		            </li>
+		            <?php } else { ?>
+                        <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfknMUQsNWHckIDk06zBle1qHMY8Y4nVBLekWxg6EpdqVdu5Q/viewform?usp=sf_link" target="_blank">Apply Now</a>
+                    </li>
+		            <li class="nav-item">
+		                <form method="POST" action="logout.php">
+		                    <button type="submit" class="btn btn-dark mx-2 my-md-0 my-1 dotted-border"
+		                        name="Logout">
+		                        Logout <i class="fas fa-sign-out-alt"></i></button>
+		                </form>
+		            </li>
+		            <?php } ?>
+                </ul>
+            </div>
+        </div>
+                
+
+    </nav>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <!-- <a class="navbar-brand" href="index2.php" style="font-size:1.5em;">WiDS</a> -->
+  <div class="container">
+    <a class=" page-scroll mr-1" href="#page-top"><img src="assets/img/logo2.ico" style="width: 87px; height: 75px;" alt=""></a>
+    <a class=" page-scroll mr-1" href="#page-top"><img src="img/clublogo.png" style="width: 110px; height: 75px; padding-right: 15px;" alt=""></a>
+    <!-- <a class=" page-scroll" href="#page-top"><img src="img/schoollogo.jpg" style="width: 87px; height: 75px;" alt=""></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+      <ul class="navbar-nav ml-auto" style="letter-spacing: 1px;">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="browse.php">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.google.com/document/d/1O2H_wYcnVwMu9uw4KiR9-CPSaoGKbiYa4EOxLwe20HI/edit?usp=sharing" target="_blank">ML Booklet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faqs">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.php">Contact Us</a>
+        </li>
+                    <?php if (!isset($_SESSION['ldap'])) { ?>
+		            <li class="nav-item">
+		                <a class="btn btn-dark mx-2 my-md-0 my-1 dotted-border"
+		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=uX35ldsNmi5eP06nOp569EyPaAkQ6Hx9sDRL7KSK&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
+		                    target="_parent">Login via SSO</a>
+		            </li>
+		            <?php } else { ?>
+                        <li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfknMUQsNWHckIDk06zBle1qHMY8Y4nVBLekWxg6EpdqVdu5Q/viewform?usp=sf_link" target="_blank">Apply Now</a>
+                    </li>
+		            <li class="nav-item">
+		                <form method="POST" action="logout.php">
+		                    <button type="submit" class="btn btn-dark mx-2 my-md-0 my-1 dotted-border"
+		                        name="Logout">
+		                        Logout <i class="fas fa-sign-out-alt"></i></button>
+		                </form>
+		            </li>
+		            <?php } ?>
+                </ul>
+    </div>
+
+  </div>
+</nav>

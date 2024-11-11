@@ -1,0 +1,217 @@
+Maximum length of GitHub_Link column: 274
+     pid              LDAP-ID:  ... Verified                Category
+0     13     22b0660@gmail.com  ...      1.0         Computer Vision
+1     14             210110077  ...      1.0         Computer Vision
+2     19  210020047@iitb.ac.in  ...      1.0         Computer Vision
+3     20  210020097@iitb.ac.in  ...      1.0         Computer Vision
+4     25    22b0407@iitb.ac.in  ...      1.0         Computer Vision
+..   ...                   ...  ...      ...                     ...
+111   76  210260055@iitb.ac.in  ...      1.0  Reinforcement Learning
+112   93    22B1061@iitb.ac.in  ...      1.0  Reinforcement Learning
+113   95    22b0941@iitb.ac.in  ...      1.0  Reinforcement Learning
+114    7    22b4221@iitb.ac.in  ...      0.0                     NaN
+115   96                     -  ...      NaN                     NaN
+
+[116 rows x 8 columns]
+hi
+https://docs.google.com/document/d/1nbdzgOFprnNygCqssZQxajuqeh7Yg3koqKmNrwrXtzg/edit?usp=sharing
+hi
+https://github.com/maroofsyyed/Human-Face-Generation-using-GAN
+hi
+https://github.com/sskkyy786/AI-phabet
+hi
+https://github.com/sskkyy786/AI-phabet
+hi
+https://github.com/ayushjadia/Gender-and-age-prediction
+hi
+https://github.com/Mohityadav797693/Gender-and-Age-Detection.git
+hi
+https://drive.google.com/drive/u/0/folders/1eh17wjXWbyTxDCH8qIe7DBq9gWKp3Tck
+hi
+https://github.com/LynnHo/AttGAN-Tensorflow
+hi
+https://github.com/AWorldOfMysteries/Sudoku-Solver
+hi
+For problem statement, timeline and resources - https://github.com/siddhant3c/WiDS_Project | dataset link - https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
+hi
+https://github.com/Sid923/Sudoku-Solver (link of project) . https://www.kaggle.com/datasets/rohit369/sudoku-digit-classification (link of dataset)
+hi
+https://github.com/Dhvanil-CSE/WiDS-2023
+hi
+https://github.com/hemantbamb15/Real-Time-Face-Recognition
+hi
+https://github.com/hemantbamb15/Real-Time-Face-Recognition
+hi
+https://github.com/Akshat0017/WiDS-2023-Image-Captioning
+hi
+https://github.com/Akshat0017/WiDS-2023-Image-Captioning.git
+hi
+https://docs.google.com/document/d/e/2PACX-1vTc1IYVzVx-7zXMzfR9Xvi_qnvtnz91U9NqeYXQm-709G_hytAy9Y6VnF8VqkfzHcsZ3qdN2E9vVg_S/pub
+hi
+https://docs.google.com/document/d/1IUWc1PrXPCIgqav8CEcHuBQ6atw4_r7c694kGcQXOms/edit?usp=sharing
+hi
+https://github.com/taXhit/Neural-Networks-for-Computer-Vision
+hi
+https://github.com/siddhant3c/WiDS_Project
+hi
+https://github.com/NEC0S/AttendanceSystem_FaceRecognition/blob/main/README.md
+hi
+https://github.com/hassan-byt0/Air-Canvas-voice-Assistor- , https://docs.google.com/document/d/1FyYnvq6HRBEBrb0S7FRHcuxDcaKEkjkg18-teYr-YHo/edit?usp=drive_link
+hi
+https://github.com/hassan-byt0/Air-Canvas-voice-Assistor- , https://docs.google.com/document/d/1FyYnvq6HRBEBrb0S7FRHcuxDcaKEkjkg18-teYr-YHo/edit?usp=drive_link
+hi
+https://docs.google.com/document/d/1uhW62uacr2BpINvsvN8IiNzc4NwxdtAs9is8m3cgzbc/edit?usp=sharing
+hi
+https://docs.google.com/document/d/1uhW62uacr2BpINvsvN8IiNzc4NwxdtAs9is8m3cgzbc/edit?usp=sharing
+hi
+https://drive.google.com/drive/folders/1TfKd3iXMy9ixc0Oola8i4zT05d0lEZpl?usp=drive_link
+hi
+https://drive.google.com/drive/folders/1TfKd3iXMy9ixc0Oola8i4zT05d0lEZpl
+hi
+https://docs.google.com/document/d/1nbdzgOFprnNygCqssZQxajuqeh7Yg3koqKmNrwrXtzg/edit?usp=drivesdk
+hi
+https://github.com/taXhit/Neural-Networks-for-Computer-Vision
+hi
+https://github.com/AWorldOfMysteries/Sudoku-Solver
+hi
+https://github.com/NEC0S/AttendanceSystem_FaceRecognition/blob/main/README.md
+hi
+https://github.com/Shanttanu07/WIDS
+hi
+https://github.com/Shanttanu07/WIDS
+hi
+https://github.com/Shanttanu07/WIDS
+hi
+https://docs.google.com/document/d/1eTAl-5fSk9kpo5ptVfuNqW2q_znulzncM--lYN7riho/edit?usp=sharinglorization/tree/main
+hi
+https://docs.google.com/document/d/1eTAl-5fSk9kpo5ptVfuNqW2q_znulzncM--lYN7riho/edit
+hi
+https://github.com/bhattbhavesh91/portrait-mode-tensorflow
+hi
+https://github.com/bhattbhavesh91/portrait-mode-tensorflow
+hi
+https://github.com/Iris-Agape/WiDS_23.git
+hi
+https://github.com/Iris-Agape/WiDS_23.git
+hi
+https://github.com/HarCh2125/GAN_based_image_colorisation
+hi
+https://github.com/BaggamRakshanTej/WiDS-2023-Hand-Gesture-Recognition-Model/blob/main/README.md
+hi
+https://drive.google.com/file/d/11SsfS8UIFHy6wvvtC1toMkpqcwwesutp/view?usp=drivesdk https://drive.google.com/file/d/11SUFEbBg5CKqq1m45NfdMHjCgH_ytNYy/view?usp=drivesdk
+hi
+https://github.com/RSM009/Stock-Price-Prediction-using-ML/
+hi
+https://github.com/ashish2506prasad/Stock_market_prediction_and_simuation
+hi
+https://github.com/ashish2506prasad/Stock_market_prediction_and_simuation
+hi
+https://drive.google.com/file/d/1Lk39MB_IkO1SMYTVcTwz35tsALhq0KcY/view?usp=sharing
+hi
+https://github.com/Ashwanidubeyiitb/ashwani_algo.git and https://github.com/Luchkata/Algorithmic_Trading_Machine_Learning.git
+hi
+https://github.com/Ashwanidubeyiitb/ashwani_algo.git and https://github.com/Luchkata/Algorithmic_Trading_Machine_Learning.git
+hi
+https://github.com/Sephiroth0201/Time-Series-Forecasting-for-Stock-Trading
+hi
+https://github.com/Sephiroth0201/Time-Series-Forecasting-for-Stock-Trading
+hi
+https://drive.google.com/file/d/1W_EsZRn92BNdJLIXGWNDu4gZeS-hfszi/view?usp=sharing
+hi
+https://github.com/Amish462004/WidsMentors
+hi
+https://drive.google.com/drive/folders/1WXydb2gJ9MgAg463VkbvhPblvvYUdRZ3?usp=sharing
+hi
+https://github.com/WoahImCoding/Stock-Market-Prediction-using-Time-Series-Forecasting-/blob/main/README.md
+hi
+https://github.com/007bhavesh/Stock-Market-Price-Prediction-using-Machine-Learning/tree/main
+hi
+https://github.com/sivamadhavchinta/WiDS-Dynamic_Stock_Market_Analysis.git
+hi
+https://github.com/Amish462004/WidsMentors
+hi
+https://drive.google.com/drive/folders/1w_7VuH05t4rnyP7RF1nV3RCYo-Ry2AfH?usp=sharing
+hi
+https://drive.google.com/drive/folders/1w_7VuH05t4rnyP7RF1nV3RCYo-Ry2AfH?usp=sharing
+hi
+For chatbot: https://drive.google.com/drive/folders/11VWODncUvEirmQ3dkY7vSog9X43jBJAt?usp=sharing
+hi
+https://colab.research.google.com/drive/1EIGXd1TFV662uqNYtSvpYxW6Pf1Jw1Eu?usp=sharing
+hi
+https://glow-pillow-0b7.notion.site/c92bc0bf86c840f484fd854fed9315d7?pvs=4
+hi
+Problem Statement :- https://drive.google.com/drive/folders/1UbcgqedwgeW35GchcbgKtIkPYpFEs_DX?usp=sharing , Dataset : https://vis-www.cs.umass.edu/lfw/
+hi
+Problem Statement :- https://drive.google.com/drive/folders/1UbcgqedwgeW35GchcbgKtIkPYpFEs_DX?usp=sharing , Dataset : https://vis-www.cs.umass.edu/lfw/
+hi
+https://drive.google.com/drive/folders/1d6aoEj5JZq21SEWzjAs7f310diDWCvVt?usp=sharing
+hi
+https://github.com/Mehul-Agrawal410/Mini-Shakespeare-Chatbot
+hi
+Project Statement : https://docs.google.com/document/d/1A7RMFC8m34I8Xc0ic2AvhJ3lRKfejtigSJtHTX35d0g/edit Code: https://github.com/Mehul-Agrawal410/Mini-Shakespeare-Chatbot
+hi
+TBA
+hi
+https://drive.google.com/file/d/1VaKrHIDWqCMe3mNBGjTfnjwo14KklsTy/view?usp=sharing
+hi
+https://drive.google.com/file/d/1VaKrHIDWqCMe3mNBGjTfnjwo14KklsTy/view?usp=sharing
+hi
+https://docs.google.com/document/d/1MJ7LetE_Tk9GzwsSJE_JRPoSv3VrXtYqTTKJt-dTAmA/edit?usp=sharing
+hi
+https://drive.google.com/drive/folders/1Uhf4QjOr76EIg9gI7Qx-RxSiTLSH57Yf?usp=drive_link
+hi
+https://github.com/Remorse-Code/Web-Scraping/tree/main
+hi
+https://github.com/udaykiran4383/mrtexp1gallary
+hi
+https://drive.google.com/drive/folders/1dpTT4lwhD-oqVhLlf8RZ7KfA-rACUZl6?usp=sharing
+hi
+https://drive.google.com/drive/folders/1dpTT4lwhD-oqVhLlf8RZ7KfA-rACUZl6?usp=sharing
+hi
+https://drive.google.com/drive/folders/1Avmc-kpJqUVdcW-KNhvxk3W_2Gb6f1Bl?usp=sharing
+hi
+https://docs.google.com/document/d/1A7RMFC8m34I8Xc0ic2AvhJ3lRKfejtigSJtHTX35d0g/edit?usp=sharing , https://github.com/Mehul-Agrawal410/Mini-Shakespeare-Chatbot
+hi
+https://github.com/PiyushiAnand/NetWeaver-Building-Neural-Networks
+hi
+https://github.com/PiyushiAnand/NetWeaver-Building-Neural-Networks
+hi
+https://github.com/deeksha-4/WiDS-23-Into_the_Realm_of_Neural_Networks.git
+hi
+https://github.com/deeksha-4/WiDS-23-Into_the_Realm_of_Neural_Networks
+hi
+https://github.com/MuskaanJ25/Trapped-In-Neural-Nets.git
+hi
+https://drive.google.com/drive/u/1/folders/1gcuffuy71CNxwwy-0ykQ3aZXF2kwZqeQ?usp=sharing
+hi
+https://drive.google.com/drive/folders/1gcuffuy71CNxwwy-0ykQ3aZXF2kwZqeQ?usp=sharing
+hi
+https://docs.google.com/document/d/1IMmoHC1cIiV7f0uAvFY5csXNyFr0UQZfuUDVBgPo6zM/edit
+hi
+https://docs.google.com/document/d/1lQjy8Z3L-MQL1U7XkeU6JBaN4AegPrbQN60_Rh30dv8/edit?usp=drivesdk
+hi
+https://github.com/TirthGada/Sentiment_analysis_news_trading
+hi
+https://github.com/TirthGada/Sentiment_analysis_news_trading
+hi
+https://drive.google.com/drive/folders/1m3dm2rPWNtpVJbeLNckAgInjnDluC60M
+hi
+https://github.com/Pinaklegend/Spam-Detection-App
+hi
+https://github.com/Pinaklegend/Spam-Detection-App, https://huggingface.co/suyash2102/model-en-to-fr
+hi
+https://rigorous-ease-220.notion.site/Machine-Learning-for-Fake-News-Detection-e8d04d31f61544b498ae72b694170f55
+hi
+https://rigorous-ease-220.notion.site/Machine-Learning-for-Fake-News-Detection-e8d04d31f61544b498ae72b694170f55?pvs=4
+hi
+https://rigorous-ease-220.notion.site/Machine-Learning-for-Fake-News-Detection-e8d04d31f61544b498ae72b694170f55?pvs=4
+hi
+https://github.com/mohak2003/Language-Translation-using-NLP
+hi
+https://github.com/shounakd56/Detecting-Depression-through-Tweets
+hi
+https://github.com/shounakd56/Detecting-Depression-through-Tweets
+hi
+https://github.com/Siddarth45/End-to-end-Score-prediction-Model.git
+hi
+Google Drive : https://docs.google.com/document/d/1LGj0mkXQXy91geCO4ejguL-QB2quJQYE44gYXZw_E1s/edit Github : https://github.com/hrithikM86/WIDS/blob/main/Precipitation_prediction_using_ML.ipynb Dataset : https://drive.google.com/file/d/1CdnvLgdJJKU5DqQfuqdnsnOXh3zsnArB/view
