@@ -2,8 +2,8 @@
 session_start();
 require_once 'sso_handler.php';
 
-$CLIENT_ID='RFS6RiMchDIhMN3CIskA5HtMA1FRJnrjqk79DVaK';
-$CLIENT_SECRET='P1o9zrsYChU5ZH9BWmjX2Gc57Jnj2mQr7jpSI4dUqPwZ30CFtl5nMpHIXiUn1NtOZ35dOdhBDI3ZrLNVzAihNV403A5Jv5dLQ1B9ZSTVCaHb7DPsrgZ44jOmwEcHMPcJ';
+$CLIENT_ID='Iq0fR0M3buR4esYN80hwAh7bfanQ38NAqEdMqWqY';
+$CLIENT_SECRET='AelMzPLrpHcs4VwOFX878ZxrZ8EQDRJGVbsCNHCkjC7Bmmy62zqPKNw5rYrtVQrY0BOyYtLsJ87HJ3GDJPsD8NI0vDzpjl4nBjiuTz59wzgSRdW2MVNEDnzRoBOU9FBG';
 echo "hi";
 //$required_fields = array('username', 'email', 'roll_number');
 //$state = 'user_login';
