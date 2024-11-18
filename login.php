@@ -9,7 +9,7 @@ echo "hi";
 //$state = 'user_login';
 $response_type = 'code';
 $permissions = 'basic profile ldap secondary_emails program phone';
-$REDIRECT_URI = 'https://ugac.gymkhana.iitb.ac.in/~Wids-2024/login.php';
+$REDIRECT_URI = 'https://ugac.gymkhana.iitb.ac.in/~Wids-2024/index.php';
 $sso_handler = new SSOHandler($CLIENT_ID, $CLIENT_SECRET);
 $required_scopes=array('basic', 'profile', 'ldap', 'secondary_emails', 'program', 'phone');
 $required_fields = array('first_name', 'last_name', 'username', 'roll_number', 'email', 'secondary_emails', 'contacts');
