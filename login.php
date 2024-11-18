@@ -2,14 +2,14 @@
 session_start();
 require_once 'sso_handler.php';
 
-$CLIENT_ID='Iq0fR0M3buR4esYN80hwAh7bfanQ38NAqEdMqWqY';
-$CLIENT_SECRET='AelMzPLrpHcs4VwOFX878ZxrZ8EQDRJGVbsCNHCkjC7Bmmy62zqPKNw5rYrtVQrY0BOyYtLsJ87HJ3GDJPsD8NI0vDzpjl4nBjiuTz59wzgSRdW2MVNEDnzRoBOU9FBG';
+$CLIENT_ID='JjLXbgsU4Au7Dz89tKOXPxnIpOruAa8zKs0ZvwFq';
+$CLIENT_SECRET='A8ViiIFY6sgLagvZv7OKgb9IeufER8Y7hZySdOOjxmD4O3hJHVm84K4AdbhF0gIUfvmxoeJOWQuKi3vOg5gBL96ISQNMeNiYBbdBUNgzYLRCweLcm2Db4soPIhZbOpoR';
 echo "hi";
 //$required_fields = array('username', 'email', 'roll_number');
 //$state = 'user_login';
 $response_type = 'code';
 $permissions = 'basic profile ldap secondary_emails program phone';
-$REDIRECT_URI = 'https://ugac.gymkhana.iitb.ac.in/~Wids-2023/login.php';
+$REDIRECT_URI = 'https://ugac.gymkhana.iitb.ac.in/~Wids-2024/login.php';
 $sso_handler = new SSOHandler($CLIENT_ID, $CLIENT_SECRET);
 $required_scopes=array('basic', 'profile', 'ldap', 'secondary_emails', 'program', 'phone');
 $required_fields = array('first_name', 'last_name', 'username', 'roll_number', 'email', 'secondary_emails', 'contacts');

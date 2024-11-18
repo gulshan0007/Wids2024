@@ -10,7 +10,7 @@ hello
 
         new SSO_JS({
             config: {
-                client_id: 'RFS6RiMchDIhMN3CIskA5HtMA1FRJnrjqk79DVaK',   // Compulsory
+                client_id: 'JjLXbgsU4Au7Dz89tKOXPxnIpOruAa8zKs0ZvwFq',   // Compulsory
                 scope: ['basic','ldap','profile', 'secondary_emails'],    // Optional. Default is  ['basic']
                 state: '', // Optional. Default None
                 response_type: 'code',  // Optional. Default is 'code'

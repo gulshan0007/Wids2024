@@ -148,7 +148,7 @@ session_start();
                     <?php if (!isset($_SESSION['ldap'])) { ?>
 		            <li class="nav-item">
 		                <a class="btn btn-dark mx-2 my-md-0 my-1 dotted-border"
-		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=RFS6RiMchDIhMN3CIskA5HtMA1FRJnrjqk79DVaK&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
+		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=JjLXbgsU4Au7Dz89tKOXPxnIpOruAa8zKs0ZvwFq&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
 		                    target="_parent">Login via SSO</a>
 		            </li>
 		            <?php } else { ?>
