@@ -896,7 +896,7 @@
 
         <br>
         <br>
-        <h3 style="text-align: center;">All selections will be declared by 2vd December 2024 and the project work will begin immediately.
+        <h3 style="text-align: center;">All selections will be declared by 2nd December 2024 and the project work will begin immediately.
             All dates mentioned are tentative and may differ from project to project.</h3>
         
 

@@ -136,7 +136,7 @@ session_start();
                     <?php if (!isset($_SESSION['ldap'])) { ?>
 		            <li class="nav-item">
 		                <a class="btn btn-dark mx-2 my-md-0 my-1 dotted-border"
-		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=RFS6RiMchDIhMN3CIskA5HtMA1FRJnrjqk79DVaK&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
+		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=Iq0fR0M3buR4esYN80hwAh7bfanQ38NAqEdMqWqY&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
 		                    target="_parent">Login via SSO</a>
 		            </li>
 		            <?php } else { ?>
@@ -176,15 +176,15 @@ session_start();
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="team2022/pradyuman.png" style="width:330px;max-height:330px;" alt="">
-                        <h3 style="font-family: 'Questrial', sans-serif; font-weight:800">Pradyuman Agarwal
+                        <img src="team2024/Ansh.jpg" style="width:330px;max-height:330px;" alt="">
+                        <h3 style="font-family: 'Questrial', sans-serif; font-weight:800">Aansh Samyani
 
 </h3>
                         <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Manager, Analytics Club
                             <br><a href="mailto:manager.analytics.iitb@gmail.com" id="issaemail">manager.analytics.iitb@gmail.com
 </a>
                             <br></p>
-                            <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 8777015253
+                            <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 7021068263
 
                         </p>
                         
@@ -200,49 +200,49 @@ session_start();
         <div class="row">
             <div class="col-sm-3 d-flex align-items-stretch my-3 mx-auto">
                                     <div class="course-content" style="width:253px;height:410px">               
-                                        <img style="width:250px;max-height:250px;"  src="team2023/WhatsApp Image 2023-12-01 at 23.39.56_6e62a093.jpg" class="card-img-top img-fluid" alt="..."> 
+                                        <img style="width:250px;max-height:250px;"  src="team2024/Aryan Kashyap - 23b0741.jpeg" class="card-img-top img-fluid" alt="..."> 
                                         <br/> <br/>      
-                                        <h4 style="font-family: 'Questrial', sans-serif; font-weight:800">Aansh Samyani
+                                        <h4 style="font-family: 'Questrial', sans-serif; font-weight:800">Aryan Kashyap
 </h4>
                                         <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Convener, Analytics Club
                                             <br><a href="mailto:manager.analytics.iitb@gmail.com" id="issaemail">analytics.convener@gmail.com
                                             </a>
                                                                         <br>
                                         </p>
-                                        <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 7021068263 </p>
+                                        <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 6206443754 </p>
                                     </div>
             </div>
             <div class="col-sm-3 d-flex align-items-stretch my-3 mx-auto">
                                     <div class="course-content" style="width:253px;height:410px">               
-                                        <img style="width:250px;max-height:250px;"  src="team2023/aditi.jpg" class="card-img-top img-fluid" alt="..."> 
+                                        <img style="width:250px;max-height:250px;"  src="team2024/bhakti.jpg" class="card-img-top img-fluid" alt="..."> 
                                         <br/> <br/>   
-                                                <h4 style="font-family: 'Questrial', sans-serif; font-weight:800">Aditi Agrawal</h4>
+                                                <h4 style="font-family: 'Questrial', sans-serif; font-weight:800">Bhakti Bansal</h4>
                                                 <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Convener, Analytics Club
                                                     <br><a href="mailto:manager.analytics.iitb@gmail.com" id="issaemail">analytics.convener@gmail.com
                                                 </p>
-                                                <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 9977104908</p>
+                                                <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 9717782855</p>
                                     </div>
             </div>
             <div class="col-sm-3 d-flex align-items-stretch my-3 mx-auto">
                                     <div class="course-content" style="width:253px;height:410px">               
-                                        <img style="width:250px;max-height:250px;"  src="team2023/keshav.jpg" class="card-img-top img-fluid" alt="..."> 
+                                        <img style="width:250px;max-height:250px;"  src="team2024/Advait.png" class="card-img-top img-fluid" alt="..."> 
                                         <br/> <br/>   
-                                        <h4 style="font-family: 'Questrial', sans-serif; font-weight:800">Keshav Maheshwari</h4>
+                                        <h4 style="font-family: 'Questrial', sans-serif; font-weight:800">Advait Bhedasgaonkar</h4>
                                         <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Convener, Analytics Club
                                             <br><a href="mailto:manager.analytics.iitb@gmail.com" id="issaemail">analytics.convener@gmail.com
                                         </p>
-                                        <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 6267123137 </p>  
+                                        <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 9970426665 </p>  
                                     </div>
             </div>
             <div class="col-sm-3 d-flex align-items-stretch my-3 mx-auto">
                                     <div class="course-content" style="width:253px;height:410px">               
-                                        <img style="width:250px;max-height:250px;"  src="team2023/yash.jpg" class="card-img-top img-fluid" alt="..."> 
+                                        <img style="width:250px;max-height:250px;"  src="team2024/Mehak.png" class="card-img-top img-fluid" alt="..."> 
                                         <br/> <br/>   
-                                        <h4 style="font-family: 'Questrial', sans-serif; font-weight:800">Yash Sah</h4>
+                                        <h4 style="font-family: 'Questrial', sans-serif; font-weight:800">Mehak</h4>
                                                 <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Convener, Analytics Club
                                                     <br><a href="mailto:manager.analytics.iitb@gmail.com" id="issaemail">analytics.convener@gmail.com
                                                 </p>
-                                                <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 7977312700 </p>
+                                                <p class="text-muted" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 7988346345 </p>
                                     </div>
             </div>
             
@@ -265,20 +265,20 @@ session_start();
                 </div>
                 <div class="col-sm-6 d-flex align-items-stretch my-3 mx-auto">
                                         <div class="course-content" style="width:253px;height:410px">               
-                                            <img data-aos="zoom-in" style="width:250px;max-height:250px;"  src="team2023/darsh.jpeg" class="card-img-top img-fluid" alt="..."> 
+                                            <img data-aos="zoom-in" style="width:250px;max-height:250px;"  src="team2024/aman.jpg" class="card-img-top img-fluid" alt="..."> 
                                             <br/> <br/>      
-                                            <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Darshan Bitla</h4>
+                                            <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Aman Singh</h4>
                                             <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Web Nominee</p>
-                                            <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 98204 89982 </p>
+                                            <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 8581879500 </p>
                                         </div>
                 </div>
                 <div class="col-sm-6 d-flex align-items-stretch my-3 mx-auto">
                                         <div class="course-content" style="width:253px;height:410px">               
-                                            <img data-aos="zoom-in" style="width:250px;max-height:250px;"  src="team2023/rupak_webcon.jpg" class="card-img-top img-fluid" alt="..."> 
+                                            <img data-aos="zoom-in" style="width:250px;max-height:250px;"  src="team2024/gulshan.jpg" class="card-img-top img-fluid" alt="..."> 
                                             <br/> <br/>   
-                                            <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Challa Rupak Vardhan</h4>
+                                            <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Gulshan Kumar</h4>
                                             <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Web Nominee</p>
-                                            <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d">  86395 06480 </p>
+                                            <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d">  6202712403 </p>
                                         </div>
                 </div>
             </div>
@@ -287,38 +287,38 @@ session_start();
                                         <div class="row">
                                             <div class="col-sm-3 d-flex align-items-stretch my-3 mx-auto">
                                                                     <div class="course-content" style="width:253px;height:410px">               
-                                                                        <img data-aos="fade-in" style="width:250px;max-height:250px;"  src="team2023/gulshan.jpg" class="card-img-top img-fluid" alt="..."> 
+                                                                        <img data-aos="fade-in" style="width:250px;max-height:250px;"  src="team2024/Mridul.png" class="card-img-top img-fluid" alt="..."> 
                                                                         <br/> <br/>      
-                                                                        <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Gulshan Kumar</h4>
+                                                                        <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Mridul Sharma</h4>
                                                                                 <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Web Convener</p>
-                                                                                <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 62027 12403 </p>
+                                                                                <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 8302183006 </p>
                                                                     </div>
                                             </div>
                                             <div class="col-sm-3 d-flex align-items-stretch my-3 mx-auto">
                                                                     <div class="course-content" style="width:253px;height:410px">               
-                                                                        <img data-aos="fade-in" style="width:250px;max-height:250px;"  src="team2023/aman.jpg" class="card-img-top img-fluid" alt="..."> 
+                                                                        <img data-aos="fade-in" style="width:250px;max-height:250px;"  src="team2024/Dev.png" class="card-img-top img-fluid" alt="..."> 
                                                                         <br/> <br/>   
-                                                                        <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Aman Singh</h4>
+                                                                        <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Dev Joshi</h4>
                                                                         <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Web Convener</p>
-                                                                        <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 85818 79500 </p>
+                                                                        <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 8160324424 </p>
                                                                     </div>
                                             </div>
                                             <div class="col-sm-3 d-flex align-items-stretch my-3 mx-auto">
                                                                     <div class="course-content" style="width:253px;height:410px">               
-                                                                        <img data-aos="fade-in" style="width:250px;max-height:250px;"  src="team2023/lina.jpg" class="card-img-top img-fluid" alt="..."> 
+                                                                        <img data-aos="fade-in" style="width:250px;max-height:250px;"  src="team2024/Amol.png" class="card-img-top img-fluid" alt="..."> 
                                                                         <br/> <br/>   
-                                                                        <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Leena Jagwani</h4>
+                                                                        <h4 class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Amol Kare</h4>
                                                                                 <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Web Convener</p>
-                                                                                <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 93993 59503 </p>
+                                                                                <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 8788908244
                                                                     </div>
                                             </div>
                                             <div class="col-sm-3 d-flex align-items-stretch my-3 mx-auto">
                                                                     <div class="course-content" style="width:253px;height:410px">               
-                                                                        <img data-aos="fade-in" style="width:250px;max-height:250px;"  src="team2023/kavin.jpg" class="card-img-top img-fluid" alt="..."> 
+                                                                        <img data-aos="fade-in" style="width:250px;max-height:250px;"  src="team2024/Arjun.png" class="card-img-top img-fluid" alt="..."> 
                                                                         <br/> <br/>   
-                                                                        <h4 class="text-center" class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Kavin Arvind</h4>
+                                                                        <h4 class="text-center" class="text-center" style="font-family: 'Questrial', sans-serif; font-weight:800">Arjun Jhunjhunwala</h4>
                                                                                 <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Web Convener</p>
-                                                                                <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 94990 45990 </p>
+                                                                                <p class="text-muted text-center" style="font-family: 'Questrial', sans-serif;">Contact:<strong style="color:#11163d"> 9874289427 </p>
                                                                     </div>
                                             </div>
                                             
