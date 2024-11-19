@@ -69,9 +69,13 @@
                     </li>
                     <?php if (!isset($_SESSION['ldap'])) { ?>
 		            <li>
-		                <a class="page-scroll"
-		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=JjLXbgsU4Au7Dz89tKOXPxnIpOruAa8zKs0ZvwFq&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
-		                    target="_parent">Login via SSO</a>
+                    <a href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?
+    client_id=JjLXbgsU4Au7Dz89tKOXPxnIpOruAa8zKs0ZvwFq&
+    response_type=code&
+    scope=basic ldap profile&
+    redirect_uri=YOUR_REDIRECT_URI&
+    state=<?php echo uniqid(); ?>" 
+    class="page-scroll">Login via SSO</a>
 		            </li>
 		            <?php } else { ?>
                         <li>
