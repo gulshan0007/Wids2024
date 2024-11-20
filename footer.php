@@ -9,7 +9,7 @@
                 <h5 class="mb-3">Contact us <i class="fa fa-phone"></i></h5>
                 <ul class="list-unstyled text-muted">
                     <li class="small text-muted">
-                        <strong style="color: #11163d; font-size: 1.25em">Ansh Samyani
+                        <strong style="color: #11163d; font-size: 1.25em">Aansh Samyani
                         </strong>
                     </li>
                     <li class="small text-muted">

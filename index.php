@@ -757,6 +757,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
 <!-- Navigation -->
 
 <body id="page-top" class="index">
+    
     <!-- Modal -->
     <div class="modal" tabindex="-1" role="dialog" id="myModal">
         <div class="modal-dialog" role="document">
@@ -772,7 +773,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                     <!--/button-->
                 </div>
                 <div class="modal-body">
-                    “Mentee Registration is active till 24th November”
+                    “Mentee Registration is active till 28th November”
                 </div>
                 <div class="modal-footer">
                     <!--button type="button" class="btn btn-primary">Save changes</button-->
@@ -977,7 +978,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             Application for projects. Please fill in your general motivation to apply
                                             and your previous work experience in the application form.
                                             <br>
-                                            <b>Deadline: 11.59 PM on Sunday, 24th November 2024.</b>
+                                            <b>Deadline: 11.59 PM on Sunday, 28th November 2024.</b>
                                         </p>
 
                                     </div>
@@ -995,7 +996,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             WiDS gauge whether a student is really driven and will see the project
                                             through. Only one project will be allocated per student.
                                             <br>
-                                            <b>Timeline: 25th November ‘24 to 30th November ‘24
+                                            <b>Timeline: 28th November ‘24 to 4th December ‘24
                                             </b>
                                         </p>
 
@@ -1027,7 +1028,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
 
             <br>
             <br>
-            <h3 style="text-align: center;">All selections will be declared by 2nd December 2024 and the project work
+            <h3 style="text-align: center;">All selections will be declared by 4th December 2024 and the project work
                 will begin immediately.
                 All dates mentioned are tentative and may differ from project to project.</h3>
 
@@ -1512,7 +1513,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
             if (currentValue >= targetValue) {
                 clearInterval(updateCounter);
                 // Check if the target value is greater than or equal to 100 to add a plus sign
-                if (targetValue >= 70) {
+                if (targetValue >= 100) {
                     document.getElementById('projectCounter').innerText = targetValue + '+';
                 } else {
                     document.getElementById('projectCounter').innerText = targetValue;
@@ -1536,7 +1537,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
 
         if (isElementInViewport(counterElement)) {
             counterElement.classList.add('show');
-            animateCounter(70, 3000); // Change 100 to your desired value and adjust duration if needed
+            animateCounter(100, 3000); // Change 100 to your desired value and adjust duration if needed
             window.removeEventListener('scroll', onScroll); // Remove the scroll listener once triggered
         }
     }
