@@ -175,12 +175,12 @@ opacity: 0.85; color:white">
         <?php if (!isset($_SESSION['ldap'])) { ?>
 		            <li class="nav-item">
 		                <a class="nav-link"
-		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=JjLXbgsU4Au7Dz89tKOXPxnIpOruAa8zKs0ZvwFq&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
+		                    href="https://sso.tech-iitb.org/project/7300a264-d142-49df-93f5-81494a6fdf62/ssocall/"
 		                    target="_parent">Login via SSO</a>
 		            </li>
 		            <?php } else { ?>
                         <li class="nav-item">
-                        <a class="nav-link"  href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" target="_blank">Apply Now</a>
+                        <a class="nav-link"  href="https://docs.google.com/forms/d/e/1FAIpQLSeDU_ovmdwf4hRA68cMZaQGGpEGPIl9tFWDXGwSeUN7-kqKtQ/viewform" target="_blank">Apply Now</a>
                     </li>
 		            <li class="nav-item">
 		                <form method="POST" action="logout.php">
@@ -201,17 +201,34 @@ opacity: 0.85; color:white">
 if (isset($_GET['project_category'])) {
     $project_category = mysqli_real_escape_string($conn, $_GET['project_category']);
     
-    // Modified query to include specific UIDs
+    // Specific UIDs to include for Miscellaneous
     $specific_uids = array(30, 24, 25, 12, 10, 8, 6, 4);
     $uids_string = implode(',', $specific_uids);
-    
-    $query2 = "SELECT * FROM Projects WHERE `Category` = '$project_category' OR `UID` IN ($uids_string) ORDER BY `UID` DESC";
+
+    if ($project_category == 'Miscellaneous') {
+        // Query for Miscellaneous with specific UIDs
+        $query2 = "SELECT * FROM Projects 
+                   WHERE (`Category` = '$project_category' OR `UID` IN ($uids_string)) 
+                   ORDER BY `UID` DESC";
+    } elseif ($project_category == 'NLP') {
+        // Query for NLP, ensuring UID = 28 is included only once
+        $query2 = "SELECT * FROM Projects 
+                   WHERE `Category` = '$project_category' AND `UID` != 28 
+                   ORDER BY `UID` DESC";
+    } else {
+        // Query for other categories
+        $query2 = "SELECT * FROM Projects 
+                   WHERE `Category` = '$project_category' 
+                   ORDER BY `UID` DESC";
+    }
+
     $result = mysqli_query($conn, $query2);
 
     if (!$result) {
         die("Query failed: " . mysqli_error($conn));
     }
     ?>
+
     <div class="breadcrumbs">
         <div class="container">
             <h2>Projects Details</h2>

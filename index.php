@@ -859,12 +859,12 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
            target="_parent">Login via SSO</a>
     <?php } else { ?>
         <div class="d-flex align-items-center">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" 
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDU_ovmdwf4hRA68cMZaQGGpEGPIl9tFWDXGwSeUN7-kqKtQ/viewform" 
                class="page-scroll btn btn-link"
                target="_blank"
                style="padding: 10px 15px; text-decoration: none;">Apply Now</a>
             
-            <form method="POST" action="logout.php" style="margin: 0; display: inline-block;">
+            <form method="POST" action="logout.php" style="margin: auto; display: inline-block;">
                 <button type="submit" 
                         class="btn btn-dark mx-2"
                         name="Logout" 
