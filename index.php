@@ -868,8 +868,8 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                 </li>
                 <li class="nav-item">
                     <form method="POST" action="logout.php">
-                        <button type="submit" class="btn btn-dark mx-3 my-md-0 dotted-border"
-                                name="Logout" style="margin-top: 2px; margin-left: 10px; width: 100px; height: 40px;">
+                        <button type="submit" class="page-scroll"
+                                name="Logout" ">
                             LogOut <i class="fas fa-sign-out-alt"></i>
                         </button>
                     </form>
