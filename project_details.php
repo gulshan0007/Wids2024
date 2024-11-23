@@ -198,21 +198,19 @@ opacity: 0.85; color:white">
     <?php require 'db_connect.php'; ?>
 
     <?php
-// Check if 'project_category' is set in the GET request
 if (isset($_GET['project_category'])) {
-    // Sanitize the input to prevent SQL injection
     $project_category = mysqli_real_escape_string($conn, $_GET['project_category']);
-
-    // Build the query to fetch projects with the specified category
-    $query2 = "SELECT * FROM Projects WHERE `Category` = '$project_category'";
+    
+    // Modified query to include specific UIDs
+    $specific_uids = array(30, 24, 25, 12, 10, 8, 6, 4);
+    $uids_string = implode(',', $specific_uids);
+    
+    $query2 = "SELECT * FROM Projects WHERE `Category` = '$project_category' OR `UID` IN ($uids_string) ORDER BY `UID` DESC";
     $result = mysqli_query($conn, $query2);
 
-    // Check if the query was successful
     if (!$result) {
         die("Query failed: " . mysqli_error($conn));
     }
-
-    // Display breadcrumbs
     ?>
     <div class="breadcrumbs">
         <div class="container">
@@ -220,43 +218,54 @@ if (isset($_GET['project_category'])) {
         </div>
     </div>
 
-    <!-- Display projects -->
     <section id="courses" class="courses">
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                 <?php
-                // Check if any rows were returned
-                if (mysqli_num_rows($result) >0) {
-                    // Loop through and display each project
+                if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         $details_url = "./project_individual.php?project_title=" . urlencode($row['Project_Title']);
-                        echo '<div class="card bg-light m-4" style="width: 20em;">
-                                <img src="img/wids_projects/' . htmlspecialchars($row['image']) . '" class="card-img-top" alt="Project Image" style="width: 20rem; height: 14rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title" style="color:#22255A;">' . htmlspecialchars($row['Project_Title']) . '</h5>
-                                    <a href="' . $details_url . '" class="btn" style="background: #22255A; color:#fff">View More</a>
-                                </div>
-                              </div>';
+                        ?>
+                        <div class="card bg-light m-4" style="width: 20em;">
+                            <img src="img/wids_projects/<?php echo htmlspecialchars($row['image']); ?>" 
+                                 class="card-img-top" 
+                                 alt="Project Image" 
+                                 style="width: 20rem; height: 14rem;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color:#22255A;">
+                                    <?php echo htmlspecialchars($row['Project_Title']); ?>
+                                </h5>
+                                <a href="<?php echo $details_url; ?>" 
+                                   class="btn" 
+                                   style="background: #22255A; color:#fff">View More</a>
+                            </div>
+                        </div>
+                        <?php
                     }
                 } else {
-                    // Display a message if no projects match the category
                     echo '<p>No projects found for the selected category.</p>';
                 }
                 ?>
             </div>
         </div>
     </section>
+
+    <?php if (isset($_GET['debug'])) { ?>
+        <div class="container mt-4">
+            <div class="alert alert-info">
+                <h4>Debug Information:</h4>
+                <p>Category: <?php echo htmlspecialchars($project_category); ?></p>
+                <p>Query: <?php echo htmlspecialchars($query2); ?></p>
+                <p>Number of results: <?php echo mysqli_num_rows($result); ?></p>
+            </div>
+        </div>
+    <?php } ?>
+
     <?php
 } else {
     echo '<p>Project category not specified in the URL.</p>';
 }
 ?>
-
-            </div>
-
-        </div>
-    </section>
-
 
 
 
