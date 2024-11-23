@@ -853,31 +853,26 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                         <a class="page-scroll" href="team.php">Contact Us</a>
                     </li>
                     <li>
-                    <?php if (!$logged_in) { ?>
-        <!-- Show Login option -->
+    <?php if (!$logged_in) { ?>
         <a class="page-scroll"
            href="https://sso.tech-iitb.org/project/7300a264-d142-49df-93f5-81494a6fdf62/ssocall/"
            target="_parent">Login via SSO</a>
     <?php } else { ?>
-        <!-- Show User options -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" class="page-scroll"
-                       target="_blank">Apply Now</a>
-                </li>
-                </ul>
-            <ul>
-                <li class="nav-item">
-                    <form method="POST" action="logout.php">
-                        <button type="submit" class="page-scroll"
-                                name="Logout" ">
-                            LogOut <i class="fas fa-sign-out-alt"></i>
-                        </button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
+        <div class="d-flex align-items-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" 
+               class="page-scroll btn btn-link"
+               target="_blank"
+               style="padding: 10px 15px; text-decoration: none;">Apply Now</a>
+            
+            <form method="POST" action="logout.php" style="margin: 0; display: inline-block;">
+                <button type="submit" 
+                        class="btn btn-dark mx-2"
+                        name="Logout" 
+                        style="margin-top: 0; width: 100px; height: 40px;">
+                    LogOut <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </form>
+        </div>
     <?php } ?>
     </li>
                 </ul>
