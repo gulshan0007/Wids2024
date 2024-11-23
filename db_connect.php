@@ -5,7 +5,7 @@
     // $query = "SELECT * FROM projects_info";
     
     $conn = mysqli_connect('10.198.49.5', 'ugacademics', 'zsVgOLEGSxewJbgk', 'ugacademics_wids_2023');
-    $query = "SELECT * FROM proj_info";
+    $query = "SELECT * FROM Projects";
 
     
     if(!$conn){
