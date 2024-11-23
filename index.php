@@ -773,7 +773,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                     <!--/button-->
                 </div>
                 <div class="modal-body">
-                    “Mentee Registration is active till 28th November”
+                    “Mentee Registration is active till 30th November”
                 </div>
                 <div class="modal-footer">
                     <!--button type="button" class="btn btn-primary">Save changes</button-->
@@ -975,7 +975,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             Application for projects. Please fill in your general motivation to apply
                                             and your previous work experience in the application form.
                                             <br>
-                                            <b>Deadline: 11.59 PM on Sunday, 28th November 2024.</b>
+                                            <b>Deadline: 11.59 PM on Sunday, 30th November 2024.</b>
                                         </p>
 
                                     </div>
@@ -993,7 +993,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             WiDS gauge whether a student is really driven and will see the project
                                             through. Only one project will be allocated per student.
                                             <br>
-                                            <b>Timeline: 28th November ‘24 to 4th December ‘24
+                                            <b>Timeline: 1st December ‘24 to 6th December ‘24
                                             </b>
                                         </p>
 
@@ -1025,7 +1025,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
 
             <br>
             <br>
-            <h3 style="text-align: center;">All selections will be declared by 4th December 2024 and the project work
+            <h3 style="text-align: center;">All selections will be declared by 6th December 2024 and the project work
                 will begin immediately.
                 All dates mentioned are tentative and may differ from project to project.</h3>
 
