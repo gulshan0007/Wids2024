@@ -866,6 +866,8 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" class="page-scroll"
                        target="_blank">Apply Now</a>
                 </li>
+                </ul>
+            <ul>
                 <li class="nav-item">
                     <form method="POST" action="logout.php">
                         <button type="submit" class="page-scroll"
