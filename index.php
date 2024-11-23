@@ -863,7 +863,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
         <nav>
             <ul>
                 <li>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" 
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" class="page-scroll"
                        target="_blank">Apply Now</a>
                 </li>
                 <li class="nav-item">
@@ -893,12 +893,12 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                     <?php if ($logged_in) { ?>
                         <h3 class="section-heading" 
                             style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                            Hello <?php echo htmlspecialchars($_SESSION['index_name']); ?>, Welcome to
+                            Hello <?php echo htmlspecialchars($_SESSION['index_name']); ?>, Welcome 
                         </h3>
                     <?php } else { ?>
                         <h3 class="section-heading" 
                             style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                            Hello Guest, Welcome to
+                            Hello Guest, Welcome 
                         </h3>
                         <h4 class="section-heading" 
                             style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
@@ -908,7 +908,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                     <h1 class="section-heading" 
                         style="font-family: 'Cabin Sketch', sans-serif; font-size: 70px;" 
                         id="dynamicText">
-                        Dynamic Text Here
+                        
                     </h1>
                 </div>
             </div>
