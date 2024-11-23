@@ -159,35 +159,30 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="text-align: center;">
                                 <a class="dropdown-item"
-                                    href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-eca4b9cd7a934f419fdf5825df29c071"
-                                    style="color: black;">Week 0</a>
+                                   href="https://fuschia-hardboard-d83.notion.site/Natural-Language-Processing-NLP-11cbdcdb181f80748413da9c2951ba0c"
+                                    style="color: black;">Natural Language Processing (NLP)</a>
                                 <br>
                                 <a class="dropdown-item"
-                                    href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-a674aafaca5b4ce7957352d026499d7a"
-                                    style="color: black;">Week 1</a>
-                                <br>
-                                <a class="dropdown-item"
-                                    href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-b0bb09a7b85148f4a6a00a3df8ae24a6"
-                                    style="color: black;">Week 2</a>
+                                    href="https://viridian-submarine-d74.notion.site/Computer-Vision-CV-11c6d54b585f80d18c38fb80b28b01af"
+                                    style="color: black;">Computer Vision (CV)</a>
+                                
                             </div>
                         </div>
                     </li>
                     <li class="mobile-only" id="mobile-only">
                         <a class="nav-link"
-                            href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-eca4b9cd7a934f419fdf5825df29c071">Resources
-                            Week-0</a>
+                        href="https://fuschia-hardboard-d83.notion.site/Natural-Language-Processing-NLP-11cbdcdb181f80748413da9c2951ba0c"
+                        style="color: black;">Natural Language Processing (NLP)</a>
+                        ></a>
                         <a class="nav-link"
-                            href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-a674aafaca5b4ce7957352d026499d7a">Resources
-                            Week-1</a>
-                        <a class="nav-link"
-                            href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-b0bb09a7b85148f4a6a00a3df8ae24a6">Resources
-                            Week-2</a>
+                        href="https://viridian-submarine-d74.notion.site/Computer-Vision-CV-11c6d54b585f80d18c38fb80b28b01af">Computer Vision (CV)</a>
+        
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php#faqs">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="team.php">CONTACT</a>
+                        <a class="nav-link" href="team.php">Contact Us</a>
                     </li>
                     <?php if (!isset($_SESSION['ldap'])) { ?>
 		            <li class="nav-item">
@@ -216,8 +211,8 @@
     <?php
             
 
-            $query2 = "SELECT * FROM proj_info WHERE `Project_Title`='".$_GET['project_title']."'";
-            $result = mysqli_query($conn, $query2);
+            $query3 = "SELECT * FROM Projects WHERE `Project_Title`='".$_GET['project_title']."'";
+            $result = mysqli_query($conn, $query3);
 
             // foreach ($rows as $row) {
             //     print_r($row);
@@ -261,7 +256,7 @@
                     <h5>Project UID: <span style="font-family: verdana"><b><?php echo $row['uid'] ?></b></span></h5>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
-                            <h5 class="color-blue">Project Duration:</h5>
+                            <h5 class="color-blue">Project Duration (in weeks):</h5>
                             <p> <?php echo $row['Duration'] ?></p>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -272,10 +267,10 @@
                             <h5 class="color-blue">Mentor LDAP:</h5>
                             <p> <?php echo $row['Mentor_LDAP'] ?></p>
                         </div>
-                        <!-- <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6">
                             <h5 class="color-blue">Number of Mentees:</h5>
-                            <p> <?php echo $row['Number of Mentees'] ?></p>
-                        </div> -->
+                            <p> <?php echo $row['Number_of_Mentees'] ?></p>
+                        </div>
 
                     </div>
 

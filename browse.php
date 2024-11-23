@@ -1,20 +1,6 @@
 <?php require 'db_connect.php'; ?>
 <?php session_start(); ?>
-<?php
-function getUniqueCategories() {
-    global $conn;
-    $sql = "SELECT DISTINCT Category FROM proj_info";
-    $result = $conn->query($sql);
 
-    $categories = [];
-    while ($row = $result->fetch_assoc()) {
-        $categories[] = $row['Category'];
-    }
-
-    return $categories;
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -201,9 +187,15 @@ opacity: 0.85; color:white">
         <h2 style="background-color:None">Projects</h2>
       </div>
     </div>
-    <?php
+<?php
 
-$categories = getUniqueCategories();
+$categories = [
+  "NLP",
+  "Miscellaneous",
+  "CV",
+  "Quant",
+  "RL"
+];
 
 // foreach ($categories as $category) {
 //     echo "<div class='category-card' onclick='showProjects(\"$category\")'>";
@@ -223,10 +215,10 @@ $categories = getUniqueCategories();
             <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
               <?php
               foreach ($categories as $category)
-              {
+              {    
                 // $project_details = mysqli_fetch_assoc($result);
                 // $count += 1;
-                $sql = "SELECT * FROM proj_info WHERE Category = '$category'";
+                $sql = "SELECT * FROM Projects WHERE Category = '$category'";
                 $result = $conn->query($sql);
                 $row = $result->fetch_assoc();
                 $details_url= "./project_details.php?project_category=".$category."";

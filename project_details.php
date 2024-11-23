@@ -127,70 +127,52 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="min-height: 100px; background-color: black;  color:white;">
-        <div class="container">
-            <a class=" page-scroll" href="#page-top"><img src="img/ugac.png"
-                    style="width: 110px; height: 75px; padding-right: 25px;" alt=""></a>
-            <a class=" page-scroll" href="#page-top"><img src="img/loooo.jpg" style="width: 87px; height: 75px;"
-                    alt=""></a>
-            <!-- <a class=" page-scroll" href="#page-top"><img src="img/schoollogo.jpg" style="width: 87px; height: 75px;" alt=""></a> -->
-            <!-- <a class="navbar-brand" href="index.php" style="font-size:1.5em;"></a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto" style="letter-spacing: 1px;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php#about">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="browse.php">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="https://drive.google.com/file/d/1gf96XHPY2BFSUMLaVHO4q7GTmt1I8wF8/view?usp=drive_link"
-                            >ML Booklet</a>
-                    </li>
-                    <li>
-                        <div class="dropdown" id="blockformobile" >
+<nav class="navbar navbar-expand-lg navbar-dark "  style="min-height: 100px; background-color: black;
+opacity: 0.85; color:white">
+  <!-- <a class="navbar-brand" href="index2.php" style="font-size:1.5em;">WiDS</a> -->
+  <div class="container">
+  <a class=" page-scroll" href="#page-top"><img src="img/ugac.png" style="width: 110px; height: 75px; padding-right: 25px;" alt=""></a>
+                <a class=" page-scroll" href="#page-top"><img src="img/loooo.jpg" style="width: 87px; height: 75px;" alt=""></a>
+    <!-- <a class=" page-scroll" href="#page-top"><img src="img/schoollogo.jpg" style="width: 87px; height: 75px;" alt=""></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+      <ul class="navbar-nav ml-auto" style="letter-spacing: 1px; color: white;">
+        <li class="nav-item">
+          <a class="nav-link" href="index.php#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="browse.php">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://drive.google.com/file/d/1gf96XHPY2BFSUMLaVHO4q7GTmt1I8wF8/view?usp=drive_link">ML Booklet</a>
+        </li>
+        <li>
+        <div class="dropdown" id="blockformobile" >
                             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Resources
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="text-align: center;">
-                                <a class="dropdown-item"
-                                    href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-eca4b9cd7a934f419fdf5825df29c071"
-                                    style="color: black;">Week 0</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="text-align: center;" >
+                                <a class="dropdown-item" href="https://fuschia-hardboard-d83.notion.site/Natural-Language-Processing-NLP-11cbdcdb181f80748413da9c2951ba0c" style="color: black;">Natural Language Processing (NLP)</a>
                                 <br>
-                                <a class="dropdown-item"
-                                    href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-a674aafaca5b4ce7957352d026499d7a"
-                                    style="color: black;">Week 1</a>
-                                <br>
-                                <a class="dropdown-item"
-                                    href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-b0bb09a7b85148f4a6a00a3df8ae24a6"
-                                    style="color: black;">Week 2</a>
+                                <a class="dropdown-item" href="https://viridian-submarine-d74.notion.site/Computer-Vision-CV-11c6d54b585f80d18c38fb80b28b01af" style="color: black;">Computer Vision (CV)</a>
                             </div>
                         </div>
                     </li>
-                    <li class="mobile-only" id="mobile-only">
-                        <a class="nav-link"
-                            href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-eca4b9cd7a934f419fdf5825df29c071">Resources
-                            Week-0</a>
-                        <a class="nav-link"
-                            href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-a674aafaca5b4ce7957352d026499d7a">Resources
-                            Week-1</a>
-                        <a class="nav-link"
-                            href="https://cyclic-eyebrow-46b.notion.site/Bootcamp-Course-Structure-b0bb09a7b85148f4a6a00a3df8ae24a6">Resources
-                            Week-2</a>
+                    <li class="mobile-only" id="mobile-only" >    
+                                 <a class="page-scroll" href="https://fuschia-hardboard-d83.notion.site/Natural-Language-Processing-NLP-11cbdcdb181f80748413da9c2951ba0c">Natural Language Processing (NLP)</a>
+                                 <a class="page-scroll" href="https://viridian-submarine-d74.notion.site/Computer-Vision-CV-11c6d54b585f80d18c38fb80b28b01af">Computer Vision (CV)</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php#faqs">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.php">CONTACT</a>
-                    </li>
-                    <?php if (!isset($_SESSION['ldap'])) { ?>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php#faqs">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.php">Contact Us</a>
+        </li>
+        <?php if (!isset($_SESSION['ldap'])) { ?>
 		            <li class="nav-item">
 		                <a class="nav-link"
 		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=JjLXbgsU4Au7Dz89tKOXPxnIpOruAa8zKs0ZvwFq&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
@@ -198,66 +180,113 @@
 		            </li>
 		            <?php } else { ?>
                         <li class="nav-item">
-                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" target="_blank">Apply Now</a>
+                        <a class="nav-link"  href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" target="_blank">Apply Now</a>
                     </li>
 		            <li class="nav-item">
 		                <form method="POST" action="logout.php">
-		                    <button type="submit" class="btn btn-dark dotted-border"
-		                        name="Logout" style="margin-top: 2px; width: 100px; height: 40px; margin-left: 0;">
+		                    <button type="submit" class="btn btn-dark mx-3 my-md-0  dotted-border"
+		                        name="Logout" style="margin-top: 2px; margin-left: 10px; width: 100px; height: 40px;">
 		                        LogOut <i class="fas fa-sign-out-alt"></i></button>
 		                </form>
 		            </li>
 		            <?php } ?>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      </ul>
+    </div>
+
+  </div>
+</nav>
     <?php require 'db_connect.php'; ?>
 
     <?php
-            
+// Check if 'project_category' is set in the GET request
+if (isset($_GET['project_category'])) {
+    // Sanitize the input to prevent SQL injection
+    $project_category = mysqli_real_escape_string($conn, $_GET['project_category']);
 
-            $query2 = "SELECT * FROM proj_info WHERE `Category`='".$_GET['project_category']."'";
-            $result = mysqli_query($conn, $query2);
+    // Build the query to fetch projects with the specified category
+    $query2 = "SELECT * FROM Projects WHERE `Category` = '$project_category'";
+    $result = mysqli_query($conn, $query2);
 
-            // foreach ($rows as $row) {
-            //     print_r($row);
-            // }
-            // Implemeting the functions for the cart system
-            // if(array_key_exists('add_to_cart', $_POST)) {
+    // Check if the query was successful
+    if (!$result) {
+        die("Query failed: " . mysqli_error($conn));
+    }
 
-            //     addToCart(
-            //         $_SESSION['name'], $_SESSION['ldap'], $_SESSION['rollno'],
-            //         $_SESSION['email'], $_SESSION['phno'],
-            //         $row['project_uid']
-            //     );
-
-            // }
-
-            // if(array_key_exists('register_course', $_POST)) {
-            //     registerCourse(
-            //         $_SESSION['name'], $_SESSION['ldap'], $_SESSION['rollno'],
-            //         $_SESSION['email'], $_SESSION['phno'],
-            //         $row['project_uid'], "1", "link" 
-            //     );
-            // }
-        ?>
+    // Display breadcrumbs
+    ?>
     <div class="breadcrumbs">
         <div class="container">
             <h2>Projects Details</h2>
-
-            <p></p>
         </div>
     </div>
-    <!-- ======= Course Details Section ======= -->
+
+    <!-- Display projects -->
     <section id="courses" class="courses">
         <div class="container" data-aos="fade-up">
-
             <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                 <?php
-            while ($row = mysqli_fetch_assoc($result))
-            {
-                // $project_details = mysqli_fetch_assoc($result);
+                // Check if any rows were returned
+                if (mysqli_num_rows($result) >0) {
+                    // Loop through and display each project
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        $details_url = "./project_individual.php?project_title=" . urlencode($row['Project_Title']);
+                        echo '<div class="card bg-light m-4" style="width: 20em;">
+                                <img src="img/wids_projects/' . htmlspecialchars($row['image']) . '" class="card-img-top" alt="Project Image" style="width: 20rem; height: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color:#22255A;">' . htmlspecialchars($row['Project_Title']) . '</h5>
+                                    <a href="' . $details_url . '" class="btn" style="background: #22255A; color:#fff">View More</a>
+                                </div>
+                              </div>';
+                    }
+                } else {
+                    // Display a message if no projects match the category
+                    echo '<p>No projects found for the selected category.</p>';
+                }
+                ?>
+            </div>
+        </div>
+    </section>
+    <?php
+} else {
+    echo '<p>Project category not specified in the URL.</p>';
+}
+?>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- <div id="preloader"></div> -->
+                        <?php require 'footer.php'; ?>
+
+
+                </div>
+
+
+</body>
+
+</html>
+
+</body>
+
+<!--Scroll to top on reload-->
+<script type="text/javascript">
+$(document).ready(function() {
+    $(this).scrollTop(0);
+});
+</script>
+
+</html>
+
+
+
+<!-- 
+
+// $project_details = mysqli_fetch_assoc($result);
                 // $count += 1;
 
                 // if ($row['Project Title'] == "The Contractor's Guide to Reinforcement Learning") {
@@ -309,45 +338,4 @@
                 //         </div>
                 //         </div>';
 
-                // }else{
-                
-                $details_url= "./project_individual.php?project_title=".$row['Project_Title']."";
-                echo '<div class="card bg-light  m-4" style="width: 20em;">
-                        <img src="img/wids_projects/'.$row['image'].'" class="card-img-top" alt="..." style="width: 20rem; height: 14rem;">
-                        <div class="card-body">
-                          <h5 class="card-title" style="color:#22255A;">'.$row['Project_Title'].'</h5>
-                          <a href="'.$details_url.'" class="btn" style="background: #22255A; color:#fff">View More</a>
-                        </div>
-                      </div>';
-                }
-            //   }
-              ?>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-    <!-- <div id="preloader"></div> -->
-                        <?php require 'footer.php'; ?>
-
-
-                </div>
-
-
-</body>
-
-</html>
-
-</body>
-
-<!--Scroll to top on reload-->
-<script type="text/javascript">
-$(document).ready(function() {
-    $(this).scrollTop(0);
-});
-</script>
-
-</html>
+                // }else{ -->
