@@ -813,9 +813,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="browse.php">Projects</a>
-                    </li>
+                    
                     <li>
                         <a class="page-scroll"
                             href="https://drive.google.com/file/d/1gf96XHPY2BFSUMLaVHO4q7GTmt1I8wF8/view?usp=drive_link">ML
@@ -863,6 +861,9 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                class="page-scroll btn btn-link"
                target="_blank"
                style="padding: 10px 15px; text-decoration: none;">Apply Now</a>
+            <li>
+                        <a class="page-scroll" href="browse.php">Projects</a>
+                    </li>
             
             <form method="POST" action="logout.php" style="margin: auto; display: inline-block;">
                 <button type="submit" 
@@ -975,7 +976,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             Application for projects. Please fill in your general motivation to apply
                                             and your previous work experience in the application form.
                                             <br>
-                                            <b>Deadline: 11.59 PM on Sunday, 30th November 2024.</b>
+                                            <b>Deadline: 11.59 PM on Saturday, 30th November 2024.</b>
                                         </p>
 
                                     </div>
