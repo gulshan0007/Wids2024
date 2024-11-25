@@ -133,24 +133,7 @@ session_start();
                     <li>
                         <a class="page-scroll" style="color:#ffffff !important;" href="team.php">Contact Us</a>
                     </li>
-                    <?php if (!isset($_SESSION['ldap'])) { ?>
-		            <li class="nav-item">
-		                <a class="btn btn-dark mx-2 my-md-0 my-1 dotted-border"
-		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=Iq0fR0M3buR4esYN80hwAh7bfanQ38NAqEdMqWqY&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
-		                    target="_parent">Login via SSO</a>
-		            </li>
-		            <?php } else { ?>
-                        <li>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" target="_blank">Apply Now</a>
-                    </li>
-		            <li class="nav-item">
-		                <form method="POST" action="logout.php">
-		                    <button type="submit" class="btn btn-dark mx-3 my-md-0  dotted-border"
-		                        name="Logout" style="margin-top: 2px; margin-left: 10px; width: 100px; height: 40px;">
-		                        LogOut <i class="fas fa-sign-out-alt"></i></button>
-		                </form>
-		            </li>
-		            <?php } ?>
+                   
                     <li>
                         <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSfknMUQsNWHckIDk06zBle1qHMY8Y4nVBLekWxg6EpdqVdu5Q/viewform?usp=sf_link"  style="color:#ffffff !important;" target="_blank">Apply Now</a>-->
                         <!-- <a href="over.html" target = "_blank">Apply Now</a> -->

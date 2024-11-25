@@ -773,7 +773,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                     <!--/button-->
                 </div>
                 <div class="modal-body">
-                    “Mentee Registration is active till 28th November”
+                    “Mentee Registration is active till 30th November”
                 </div>
                 <div class="modal-footer">
                     <!--button type="button" class="btn btn-primary">Save changes</button-->
@@ -813,9 +813,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="browse.php">Projects</a>
-                    </li>
+                    
                     <li>
                         <a class="page-scroll"
                             href="https://drive.google.com/file/d/1gf96XHPY2BFSUMLaVHO4q7GTmt1I8wF8/view?usp=drive_link">ML
@@ -853,30 +851,19 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                         <a class="page-scroll" href="team.php">Contact Us</a>
                     </li>
                     <li>
-                    <?php if (!$logged_in) { ?>
-        <!-- Show Login option -->
-        <a class="page-scroll"
-           href="https://sso.tech-iitb.org/project/7300a264-d142-49df-93f5-81494a6fdf62/ssocall/"
-           target="_parent">Login via SSO</a>
-    <?php } else { ?>
-        <!-- Show User options -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" 
-                       target="_blank">Apply Now</a>
-                </li>
-                <li class="nav-item">
-                    <form method="POST" action="logout.php">
-                        <button type="submit" class="btn btn-dark mx-3 my-md-0 dotted-border"
-                                name="Logout" style="margin-top: 2px; margin-left: 10px; width: 100px; height: 40px;">
-                            LogOut <i class="fas fa-sign-out-alt"></i>
-                        </button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
-    <?php } ?>
+
+        <div class="d-flex align-items-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDU_ovmdwf4hRA68cMZaQGGpEGPIl9tFWDXGwSeUN7-kqKtQ/viewform" 
+               class="page-scroll btn btn-link"
+               target="_blank"
+               style="padding: 10px 15px; text-decoration: none;">Apply Now</a>
+            <li>
+                        <a class="page-scroll" href="browse.php">Projects</a>
+                    </li>
+            
+           
+        </div>
+    
     </li>
                 </ul>
             </div>
@@ -890,25 +877,17 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <?php if ($logged_in) { ?>
+                    
                         <h3 class="section-heading" 
                             style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                            Hello <?php echo htmlspecialchars($_SESSION['index_name']); ?>, Welcome to
-                        </h3>
-                    <?php } else { ?>
-                        <h3 class="section-heading" 
-                            style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                            Hello Guest, Welcome to
-                        </h3>
-                        <h4 class="section-heading" 
-                            style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                            Please Login via SSO to continue
-                        </h4>
-                    <?php } ?>
+                            Welcome to
+                        </h3> 
+                        
+                    
                     <h1 class="section-heading" 
                         style="font-family: 'Cabin Sketch', sans-serif; font-size: 70px;" 
                         id="dynamicText">
-                        Dynamic Text Here
+                        
                     </h1>
                 </div>
             </div>
@@ -978,7 +957,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             Application for projects. Please fill in your general motivation to apply
                                             and your previous work experience in the application form.
                                             <br>
-                                            <b>Deadline: 11.59 PM on Sunday, 28th November 2024.</b>
+                                            <b>Deadline: 11.59 PM on Saturday, 30th November 2024.</b>
                                         </p>
 
                                     </div>
@@ -996,7 +975,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             WiDS gauge whether a student is really driven and will see the project
                                             through. Only one project will be allocated per student.
                                             <br>
-                                            <b>Timeline: 28th November ‘24 to 4th December ‘24
+                                            <b>Timeline: 1st December ‘24 to 6th December ‘24
                                             </b>
                                         </p>
 
@@ -1028,7 +1007,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
 
             <br>
             <br>
-            <h3 style="text-align: center;">All selections will be declared by 4th December 2024 and the project work
+            <h3 style="text-align: center;">All selections will be declared by 6th December 2024 and the project work
                 will begin immediately.
                 All dates mentioned are tentative and may differ from project to project.</h3>
 
