@@ -184,24 +184,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="team.php">Contact Us</a>
                     </li>
-                    <?php if (!isset($_SESSION['ldap'])) { ?>
-		            <li class="nav-item">
-		                <a class="nav-link"
-		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=JjLXbgsU4Au7Dz89tKOXPxnIpOruAa8zKs0ZvwFq&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
-		                    target="_parent">Login via SSO</a>
-		            </li>
-		            <?php } else { ?>
-                        <li class="nav-item">
-                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" target="_blank">Apply Now</a>
-                    </li>
-		            <li class="nav-item">
-		                <form method="POST" action="logout.php">
-		                    <button type="submit" class="btn btn-dark dotted-border"
-		                        name="Logout" style="margin-top: 2px; width: 100px; height: 40px; margin-left: 0;">
-		                        LogOut <i class="fas fa-sign-out-alt"></i></button>
-		                </form>
-		            </li>
-		            <?php } ?>
+                   
                 </ul>
             </div>
         </div>
