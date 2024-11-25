@@ -851,11 +851,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                         <a class="page-scroll" href="team.php">Contact Us</a>
                     </li>
                     <li>
-    <?php if (!$logged_in) { ?>
-        <a class="page-scroll"
-           href="https://sso.tech-iitb.org/project/7300a264-d142-49df-93f5-81494a6fdf62/ssocall/"
-           target="_parent">Login via SSO</a>
-    <?php } else { ?>
+
         <div class="d-flex align-items-center">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDU_ovmdwf4hRA68cMZaQGGpEGPIl9tFWDXGwSeUN7-kqKtQ/viewform" 
                class="page-scroll btn btn-link"
@@ -865,16 +861,9 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                         <a class="page-scroll" href="browse.php">Projects</a>
                     </li>
             
-            <form method="POST" action="logout.php" style="margin: auto; display: inline-block;">
-                <button type="submit" 
-                        class="btn btn-dark mx-2"
-                        name="Logout" 
-                        style="margin-top: 0; width: 100px; height: 40px;">
-                    LogOut <i class="fas fa-sign-out-alt"></i>
-                </button>
-            </form>
+           
         </div>
-    <?php } ?>
+    
     </li>
                 </ul>
             </div>
@@ -888,21 +877,13 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <?php if ($logged_in) { ?>
+                    
                         <h3 class="section-heading" 
                             style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                            Hello <?php echo htmlspecialchars($_SESSION['index_name']); ?>, Welcome 
-                        </h3>
-                    <?php } else { ?>
-                        <h3 class="section-heading" 
-                            style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                            Hello Guest, Welcome 
-                        </h3>
-                        <h4 class="section-heading" 
-                            style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                            Please Login via SSO to continue
-                        </h4>
-                    <?php } ?>
+                            Welcome to
+                        </h3> 
+                        
+                    
                     <h1 class="section-heading" 
                         style="font-family: 'Cabin Sketch', sans-serif; font-size: 70px;" 
                         id="dynamicText">
@@ -1191,7 +1172,8 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                             from different departments</h3>
                     </div>
                 </div>
-<!--                 <div class="row" style="text-align:center;">
+                <div class="row" style="text-align:center;">
+                    <!--<h2 class="section-heading">Coming Soon!</h2>-->
                     <div class="row text-center">
                         <a align="center" href="browse.php" class="page-scroll btn btn-xl"
                             style="background-color:#323B75;color:white; border-color:white;">
@@ -1200,7 +1182,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
 
                     </div>
 
-                </div> -->
+                </div>
 
             </div>
             <!--<div class="col-md-2 col-sm-6 portfolio-item">
