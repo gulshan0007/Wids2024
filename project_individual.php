@@ -187,12 +187,12 @@
                     <?php if (!isset($_SESSION['ldap'])) { ?>
 		            <li class="nav-item">
 		                <a class="nav-link"
-		                    href="https://sso.tech-iitb.org/project/7300a264-d142-49df-93f5-81494a6fdf62/ssocall/"
+		                    href="https://gymkhana.iitb.ac.in/profiles/oauth/authorize/?client_id=JjLXbgsU4Au7Dz89tKOXPxnIpOruAa8zKs0ZvwFq&amp;scope=basic ldap profile secondary_emails program phone&amp;response_type=code"
 		                    target="_parent">Login via SSO</a>
 		            </li>
 		            <?php } else { ?>
                         <li class="nav-item">
-                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeDU_ovmdwf4hRA68cMZaQGGpEGPIl9tFWDXGwSeUN7-kqKtQ/viewform" target="_blank">Apply Now</a>
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScHiu4iXVZtmX_KeFeErmxqRohjedErSNFGvqdRnIfrqTsWdg/viewform?pli=1" target="_blank">Apply Now</a>
                     </li>
 		            <li class="nav-item">
 		                <form method="POST" action="logout.php">
@@ -206,113 +206,119 @@
             </div>
         </div>
     </nav>
-    <?php require 'db_connect.php'; ?>
-
     <?php
-            
+require 'db_connect.php';
 
-            $query3 = "SELECT * FROM Projects WHERE `Project_Title`='".$_GET['project_title']."'";
-            $result = mysqli_query($conn, $query3);
+// Sanitize and validate input
+function sanitize_input($conn, $input) {
+    return mysqli_real_escape_string($conn, trim($input));
+}
 
-            // foreach ($rows as $row) {
-            //     print_r($row);
-            // }
-            // Implemeting the functions for the cart system
-            // if(array_key_exists('add_to_cart', $_POST)) {
+// Check if project_title is set
+if (!isset($_GET['project_title'])) {
+    die("Project title not specified");
+}
 
-            //     addToCart(
-            //         $_SESSION['name'], $_SESSION['ldap'], $_SESSION['rollno'],
-            //         $_SESSION['email'], $_SESSION['phno'],
-            //         $row['project_uid']
-            //     );
+// Sanitize the project title
+$project_title = sanitize_input($conn, $_GET['project_title']);
 
-            // }
+// Use prepared statement to prevent SQL injection
+$query = "SELECT * FROM Projects WHERE Project_Title = ?";
+$stmt = mysqli_prepare($conn, $query);
 
-            // if(array_key_exists('register_course', $_POST)) {
-            //     registerCourse(
-            //         $_SESSION['name'], $_SESSION['ldap'], $_SESSION['rollno'],
-            //         $_SESSION['email'], $_SESSION['phno'],
-            //         $row['project_uid'], "1", "link" 
-            //     );
-            // }
-        ?>
-    <div class="breadcrumbs">
-        <div class="container">
-            <h2>Projects Details</h2>
-            <?php while ($row = mysqli_fetch_assoc($result)): ?>
+if ($stmt) {
+    mysqli_stmt_bind_param($stmt, "s", $project_title);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+    
+    if (!$result) {
+        die("Query failed: " . mysqli_error($conn));
+    }
+    
+    // Check if any rows were returned
+    if (mysqli_num_rows($result) == 0) {
+        die("No project found with the specified title");
+    }
+} else {
+    die("Failed to prepare statement: " . mysqli_error($conn));
+}
+?>
 
-            <p></p>
-        </div>
+<div class="breadcrumbs">
+    <div class="container">
+        <h2>Projects Details</h2>
+        <p></p>
     </div>
-    <!-- ======= Course Details Section ======= -->
-    <section id="course-details" class="course-details" style="padding-bottom: 0px !important;">
-        <div class="container p-5" data-aos="fade-up">
-            <div class="row">
+</div>
+
+<section id="course-details" class="course-details" style="padding-bottom: 0px !important;">
+    <div class="container p-5" data-aos="fade-up">
+        <div class="row">
+            <?php 
+            if ($row = mysqli_fetch_assoc($result)):
+                // Debug line - remove in production
+                error_log("Project data: " . print_r($row, true));
+            ?>
                 <div class="col-lg-8">
-
-                    <!-- <img src="https://static3.cbrimages.com/wordpress/wp-content/uploads/2020/03/Featured-Image-Luffy.jpg" class="img-fluid" alt=""> -->
-
-                    <h3><?php echo $row['Project_Title'] ?></h3>
-                    <h5>Project UID: <span style="font-family: verdana"><b><?php echo $row['uid'] ?></b></span></h5>
+                    <h3><?php echo htmlspecialchars($row['Project_Title']) ?></h3>
+                    <h5>Project UID: <span style="font-family: verdana"><b><?php echo htmlspecialchars($row['uid']) ?></b></span></h5>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <h5 class="color-blue">Project Duration (in weeks):</h5>
-                            <p> <?php echo $row['Duration'] ?></p>
+                            <p><?php echo htmlspecialchars($row['Duration']) ?></p>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <h5 class="color-blue">Mentor Name:</h5>
-                            <p> <?php echo $row['Mentor_Name'] ?></p>
+                            <p><?php echo htmlspecialchars($row['Mentor_Name']) ?></p>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <h5 class="color-blue">Mentor LDAP:</h5>
-                            <p> <?php echo $row['Mentor_LDAP'] ?></p>
+                            <p><?php echo htmlspecialchars($row['Mentor_LDAP']) ?></p>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <h5 class="color-blue">Number of Mentees:</h5>
-                            <p> <?php echo $row['Number_of_Mentees'] ?></p>
+                            <p><?php echo htmlspecialchars($row['Number_of_Mentees']) ?></p>
                         </div>
-
                     </div>
 
                     <h5 class="color-blue">Project Description:</h5>
                     <p style="font-family: 'Questrial', sans-serif;font-size:18px;">
-                        <?php echo $row['Project_Description']?></p>
-
+                        <?php echo nl2br(htmlspecialchars($row['Project_Description'])) ?>
+                    </p>
                 </div>
+
                 <div class="col-lg-4">
-
-                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
-                <h5>CPI criteria</h5>
-                <p><a href="#">
-                    <?php 
-                    // echo $row["cpi_eligibility"] ?>
-                </a></p>
-                </div> -->
                     <div class="container-fluid my-4 mx-auto" style="width: 20rem;height: 20rem;">
-                        <img src="img/wids_projects/<?php echo $row['image']?>" alt=""
-                            style="width: 18rem;height: 18rem;">
-
+                        <?php if (!empty($row['image'])): ?>
+                            <img src="img/wids_projects/<?php echo htmlspecialchars($row['image']) ?>" 
+                                 alt="Project Image"
+                                 style="width: 18rem;height: 18rem;">
+                        <?php endif; ?>
                     </div>
-                    <!-- <div class="course-info d-flex justify-content-between align-items-center">
-                <h5 class="mr-2 pr-2">Number of Mentees</h5>
-                <p><a href="#"><?php echo $row["Number of Mentees"] ?></a></p>
-                </div> -->
 
                     <div class="course-info d-flex justify-content-between align-items-center">
                         <h5 class="mr-2 pr-2">Prerequisites</h5>
-                        <p><a href="#"><?php echo $row["Prerequisites"] ?></a></p>
+                        <p><a href="#"><?php echo htmlspecialchars($row['Prerequisites']) ?></a></p>
                     </div>
 
                     <div class="course-info d-flex justify-content-between align-items-center">
                         <h5 class="mr-2 pr-2">Difficulty Level</h5>
-                        <p><a href="#"><?php echo $row["Difficulty"] ?></a></p>
+                        <p><a href="#"><?php echo htmlspecialchars($row['Difficulty']) ?></a></p>
                     </div>
-
                 </div>
-                <?php endwhile ?>
-            </div>
+            <?php else: ?>
+                <div class="col-12">
+                    <p>No project details found.</p>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
 
-            <?php require 'footer.php'; ?>
+<?php 
+mysqli_stmt_close($stmt);
+require 'footer.php'; 
+?>
 </body>
 
 </html>
