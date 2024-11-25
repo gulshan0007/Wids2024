@@ -1191,8 +1191,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                             from different departments</h3>
                     </div>
                 </div>
-                <div class="row" style="text-align:center;">
-                    <!--<h2 class="section-heading">Coming Soon!</h2>-->
+<!--                 <div class="row" style="text-align:center;">
                     <div class="row text-center">
                         <a align="center" href="browse.php" class="page-scroll btn btn-xl"
                             style="background-color:#323B75;color:white; border-color:white;">
@@ -1201,7 +1200,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
 
                     </div>
 
-                </div>
+                </div> -->
 
             </div>
             <!--<div class="col-md-2 col-sm-6 portfolio-item">
