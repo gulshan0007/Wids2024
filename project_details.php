@@ -185,10 +185,25 @@ if (isset($_GET['project_category'])) {
     $project_category = mysqli_real_escape_string($conn, $_GET['project_category']);
     
     // Modified query to include specific UIDs
-    $specific_uids = array(30, 24, 25, 12, 10, 8, 6, 4);
+    $specific_uids = array(30, 24, 25, 12, 10, 8, 9, 4);
     $uids_string = implode(',', $specific_uids);
     
-    $query2 = "SELECT * FROM Projects WHERE `Category` = '$project_category' OR `UID` IN ($uids_string) ORDER BY `UID` DESC";
+    if ($project_category == 'Miscellaneous') {
+        // Query for Miscellaneous with specific UIDs
+        $query2 = "SELECT * FROM Projects 
+                   WHERE (`Category` = '$project_category' OR `UID` IN ($uids_string)) 
+                   ORDER BY `UID` DESC";
+    } elseif ($project_category == 'NLP') {
+        // Query for NLP, ensuring UID = 28 is included only once
+        $query2 = "SELECT * FROM Projects 
+                   WHERE `Category` = '$project_category' AND `UID` != 28 
+                   ORDER BY `UID` DESC";
+    } else {
+        // Query for other categories
+        $query2 = "SELECT * FROM Projects 
+                   WHERE `Category` = '$project_category' 
+                   ORDER BY `UID` DESC";
+    }
     $result = mysqli_query($conn, $query2);
 
     if (!$result) {
