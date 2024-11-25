@@ -185,7 +185,7 @@ if (isset($_GET['project_category'])) {
     $project_category = mysqli_real_escape_string($conn, $_GET['project_category']);
     
     // Modified query to include specific UIDs
-    $specific_uids = array(30, 24, 25, 12, 10, 8, 9, 4);
+    $specific_uids = array(30, 24, 25, 12, 10, 8, 6, 4);
     $uids_string = implode(',', $specific_uids);
     
     if ($project_category == 'Miscellaneous') {
