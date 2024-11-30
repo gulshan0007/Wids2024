@@ -957,7 +957,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             Application for projects. Please fill in your general motivation to apply
                                             and your previous work experience in the application form.
                                             <br>
-                                            <b>Deadline: 11.59 PM on Saturday, 2nd December 2024.</b>
+                                            <b>Deadline: 11.59 PM on Monday, 2nd December 2024.</b>
                                         </p>
 
                                     </div>
@@ -975,7 +975,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             WiDS gauge whether a student is really driven and will see the project
                                             through. Only one project will be allocated per student.
                                             <br>
-                                            <b>Timeline: 1st December ‘24 to 6th December ‘24
+                                            <b>Timeline: 3rd December ‘24 to 6th December ‘24
                                             </b>
                                         </p>
 
