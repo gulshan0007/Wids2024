@@ -773,7 +773,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                     <!--/button-->
                 </div>
                 <div class="modal-body">
-                    “Mentee Registration is active till 30th November”
+                    “Mentee Registration is active till 2nd December”
                 </div>
                 <div class="modal-footer">
                     <!--button type="button" class="btn btn-primary">Save changes</button-->
