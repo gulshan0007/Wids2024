@@ -957,7 +957,7 @@ if (isset($_SESSION['index_name']) && isset($_SESSION['index_roll'])) {
                                             Application for projects. Please fill in your general motivation to apply
                                             and your previous work experience in the application form.
                                             <br>
-                                            <b>Deadline: 11.59 PM on Saturday, 30th November 2024.</b>
+                                            <b>Deadline: 11.59 PM on Saturday, 2nd December 2024.</b>
                                         </p>
 
                                     </div>
